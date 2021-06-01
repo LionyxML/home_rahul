@@ -1,0 +1,148 @@
+//Roboto
+
+.roboto_regular_base {
+  font-family: 'Roboto';
+  color: #000;
+}
+
+.regular_1 {
+  @extend .roboto_regular_base;
+  font-size: 1rem;
+}
+
+.regular_12 {
+  @extend .roboto_regular_base;
+  font-size: 1.2rem;
+}
+
+.regular_15 {
+  @extend .roboto_regular_base;
+  font-size: 1.5rem;
+}
+.regular_18 {
+  @extend .roboto_regular_base;
+  font-size: 1.8rem;
+}
+.regular_2 {
+  @extend .roboto_regular_base;
+  font-size: 2rem;
+}
+
+.regular_22 {
+  @extend .roboto_regular_base;
+  font-size: 2.2rem;
+}
+
+.regular_25 {
+  @extend .roboto_regular_base;
+  font-size: 2.5rem;
+}
+
+.regular_28 {
+  @extend .roboto_regular_base;
+  font-size: 2.8rem;
+}
+
+.regular_3 {
+  @extend .roboto_regular_base;
+  font-size: 3rem;
+}
+
+
+// Roboto Bold
+.roboto_bold_base {
+  font-family: 'Roboto_Bold';
+  color: #000;
+}
+
+.bold_1 {
+  @extend .roboto_bold_base;
+  font-size: 1rem;
+}
+
+.bold_12 {
+  @extend .roboto_bold_base;
+  font-size: 1.2rem;
+}
+
+.bold_15 {
+  @extend .roboto_bold_base;
+  font-size: 1.5rem;
+}
+.bold_18 {
+  @extend .roboto_bold_base;
+  font-size: 1.8rem;
+}
+.bold_2 {
+  @extend .roboto_bold_base;
+  font-size: 2rem;
+}
+
+.bold_22 {
+  @extend .roboto_bold_base;
+  font-size: 2.2rem;
+}
+
+.bold_25 {
+  @extend .roboto_bold_base;
+  font-size: 2.5rem;
+}
+
+.bold_28 {
+  @extend .roboto_bold_base;
+  font-size: 2.8rem;
+}
+
+.bold_3 {
+  @extend .roboto_bold_base;
+  font-size: 3rem;
+}
+
+// Roboto Light
+.roboto_light_base {
+  font-family: 'Roboto_Light';
+  color: #000;
+}
+
+.light_1 {
+  @extend .roboto_light_base;
+  font-size: 1rem;
+}
+
+.light_12 {
+  @extend .roboto_light_base;
+  font-size: 1.2rem;
+}
+
+.light_15 {
+  @extend .roboto_light_base;
+  font-size: 1.5rem;
+}
+.light_18 {
+  @extend .roboto_light_base;
+  font-size: 1.8rem;
+}
+.light_2 {
+  @extend .roboto_light_base;
+  font-size: 2rem;
+}
+
+.light_22 {
+  @extend .roboto_light_base;
+  font-size: 2.2rem;
+}
+
+.light_25 {
+  @extend .roboto_light_base;
+  font-size: 2.5rem;
+}
+
+.light_28 {
+  @extend .roboto_light_base;
+  font-size: 2.8rem;
+}
+
+.light_3 {
+  @extend .roboto_light_base;
+  font-size: 3rem;
+}
