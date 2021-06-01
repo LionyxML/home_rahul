@@ -174,6 +174,7 @@
   width: 100%;
   height: 14px;
   background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10rem;
 }
 
 .hero-sub-text {
@@ -184,4 +185,66 @@
   font-size: 1rem;
   margin-top: 0.5rem;
   text-transform: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bar {
+  width: 80%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10rem;
+  margin: 1rem 2rem;
+}
+
+.sec-title {
+  font-family: 'Oswald';
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.content {
+  max-width: 80%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 1rem;
+}
+
+.col {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-title {
+  font-family: "Oswald";
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+.content-text {
+  font-family: "Roboto";
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.content-text ul {
+  list-style: square;
+  list-style-position: inside;
+}
+
+.thumb {
+  width: 100%;
 }
