@@ -1,2 +1,10 @@
-$primary-color: #272727;
-$secondary-color: #ff652f;
+$light-blue: #607d8b;
+$darker-blue: #8299a3;
+$white: #ffffff;
+$dark: #202020;
+$black: #000000;
+$light-gray: #e3e3e3;
+
+.bg-sec {
+  background-color: $light-gray;
+}

@@ -18,6 +18,10 @@
   src: url("../fonts/Oswald-VariableFont_wght.ttf");
 }
 
+.bg-sec {
+  background-color: #e3e3e3;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -147,6 +151,11 @@
   font-size: 3rem;
 }
 
+.body {
+  background-color: #ffffff;
+  color: #202020;
+}
+
 .hero-title {
   height: 100%;
   background-image: url(../img/bg.jpg);
@@ -163,7 +172,7 @@
 
 .hero-text {
   font-size: 80px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   font-family: "Oswald";
   text-align: center;
@@ -173,7 +182,8 @@
 .hero-bar {
   width: 100%;
   height: 14px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #607d8b;
+  opacity: 40%;
   border-radius: 10rem;
 }
 
@@ -197,7 +207,7 @@
 .bar {
   width: 80%;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #8299a3;
   border-radius: 10rem;
   margin: 1rem 2rem;
 }
@@ -211,6 +221,7 @@
 
 .content {
   max-width: 80%;
+  width: 100vw;
 }
 
 .row {
@@ -218,6 +229,7 @@
   justify-content: center;
   align-items: flex-start;
   grid-gap: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .col {
@@ -228,23 +240,25 @@
   flex-direction: column;
 }
 
-.content-title {
+.col .thumb {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem #202020;
+}
+
+.col .content-title {
   font-family: "Oswald";
   font-size: 2.5rem;
   width: 100%;
 }
 
-.content-text {
+.col .content-text {
   font-family: "Roboto";
   line-height: 2rem;
   font-size: 1.2rem;
 }
 
-.content-text ul {
+.col .content-text ul {
   list-style: square;
   list-style-position: inside;
-}
-
-.thumb {
-  width: 100%;
 }
