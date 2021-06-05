@@ -81,6 +81,22 @@ var posts = [
       <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
     </ul>`,
     image: `https://picsum.photos/300`
+  },
+  {
+    title: "Título do programa 4",
+    desc: `
+    <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
+    <br>
+    <ul>
+      <li>Roda diretamente no Browser</li>
+      <li>Utiliza o fetch()</li>
+      <li>Escalonamento automático com a tela</li>
+      <li>Tradutor Básico</li>
+      <li>Utiliza HTML5, JS, CSS3</li>
+      <li><a href="#">Github</a></li>
+      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    </ul>`,
+    image: `https://picsum.photos/300`
   }
 ];
 
