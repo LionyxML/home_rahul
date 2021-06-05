@@ -81,8 +81,7 @@
 .row {
   display: flex;
   justify-content: center;
-  // align-items: flex-start;
-  grid-gap: 1rem;
+// align-items: flex-start;  grid-gap: 1rem;
   margin-bottom: 1.4rem;
 }
 
@@ -136,6 +135,12 @@
       a {
         text-decoration: none;
         color: $darker-blue;
+        transition: all .2s ease-in-out;
+      }
+
+      a:hover {
+        background-color: $dark;
+        transform: scale(1.2);
       }
 
     }

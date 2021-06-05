@@ -239,7 +239,6 @@
 .row {
   display: flex;
   justify-content: center;
-  grid-gap: 1rem;
   margin-bottom: 1.4rem;
 }
 
@@ -296,4 +295,10 @@
 .col .content-text ul a {
   text-decoration: none;
   color: #8299a3;
+  transition: all .2s ease-in-out;
+}
+
+.col .content-text ul a:hover {
+  background-color: #202020;
+  transform: scale(1.2);
 }
