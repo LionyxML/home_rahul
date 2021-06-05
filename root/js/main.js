@@ -121,3 +121,15 @@ function componentPost(content, darkbg){
 
   return model.html;
 }
+
+
+// Navbar automation
+var navigation = document.getElementsByClassName("navbar")[0];
+
+window.addEventListener("scroll", (event) => {
+    if(this.scrollY > 50){
+      navigation.classList.add('darkbg');
+    } else {
+      navigation.classList.remove('darkbg');
+    }
+});

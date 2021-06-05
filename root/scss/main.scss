@@ -218,3 +218,8 @@ body::-webkit-scrollbar-thumb {
 
   }
 }
+
+.darkbg {
+  background-color: $dark;
+  transition: ease-in-out 1s;
+}

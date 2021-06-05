@@ -364,3 +364,8 @@ body::-webkit-scrollbar-thumb {
 .navbar--links ul li a:hover {
   background-color: #607d8b;
 }
+
+.darkbg {
+  background-color: #202020;
+  transition: ease-in-out 1s;
+}
