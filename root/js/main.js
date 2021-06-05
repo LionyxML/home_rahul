@@ -4,7 +4,14 @@ var content = document.getElementsByClassName('content')[0];
 adder.addEventListener('click', addContent);
 
 function addContent() {
-  content.innerHTML = componentPost(post);
+
+  content.innerHTML = "";
+  let x = false;
+  for (let i in posts) {
+      content.innerHTML += componentPost(posts[i], x);
+      x = !x;
+  }
+
 }
 
 
@@ -26,13 +33,63 @@ var post = {
   image: `https://picsum.photos/300`
 }
 
+var posts = [
+  {
+    title: "Título do programa",
+    desc: `
+    <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
+    <br>
+    <ul>
+      <li>Roda diretamente no Browser</li>
+      <li>Utiliza o fetch()</li>
+      <li>Escalonamento automático com a tela</li>
+      <li>Tradutor Básico</li>
+      <li>Utiliza HTML5, JS, CSS3</li>
+      <li><a href="#">Github</a></li>
+      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    </ul>`,
+    image: `https://picsum.photos/300`
+  },
+  {
+    title: "Título do programa 2",
+    desc: `
+    <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
+    <br>
+    <ul>
+      <li>Roda diretamente no Browser</li>
+      <li>Utiliza o fetch()</li>
+      <li>Escalonamento automático com a tela</li>
+      <li>Tradutor Básico</li>
+      <li>Utiliza HTML5, JS, CSS3</li>
+      <li><a href="#">Github</a></li>
+      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    </ul>`,
+    image: `https://picsum.photos/300`
+  },
+  {
+    title: "Título do programa 3",
+    desc: `
+    <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
+    <br>
+    <ul>
+      <li>Roda diretamente no Browser</li>
+      <li>Utiliza o fetch()</li>
+      <li>Escalonamento automático com a tela</li>
+      <li>Tradutor Básico</li>
+      <li>Utiliza HTML5, JS, CSS3</li>
+      <li><a href="#">Github</a></li>
+      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    </ul>`,
+    image: `https://picsum.photos/300`
+  }
+];
+
 // Component: POST
 // Generates POST from given content
-function componentPost(content){
-
+function componentPost(content, darkbg){
   var model = {
     html : `
-        <div class="row px-2">
+        <div class="row px-2 ${ darkbg ? "bg-sec" : "" }">
           <div class="col">
             <div class="content-title">${ content.title }</div>
             <div class="content-text">
