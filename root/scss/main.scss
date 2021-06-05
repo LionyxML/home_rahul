@@ -159,3 +159,50 @@
 
   }
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: 40px;
+  font-family: "Oswald";
+  width: 100%;
+  padding: 1rem;
+
+
+  &--title {
+    display: flex;
+    align-items: center;
+  }
+
+  &--links {
+    @extend .regular_1;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        a {
+          text-decoration: none;
+          padding: 10px;
+          color: $white;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            background-color: $light-blue;
+          }
+
+        }
+      }
+
+    }
+
+  }
+}

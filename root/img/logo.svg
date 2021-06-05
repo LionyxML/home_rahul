@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 300px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: Chalkduster;
+      }
+    </style>
+  </defs>
+  <text id="R" class="cls-1" x="150" y="244.311"><tspan x="150">R</tspan></text>
+</svg>
