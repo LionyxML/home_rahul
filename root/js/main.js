@@ -123,13 +123,25 @@ function componentPost(content, darkbg){
 }
 
 
-// Navbar automation
+// Scrollbar automation
 var navigation = document.getElementsByClassName("navbar")[0];
 
 window.addEventListener("scroll", (event) => {
     if(this.scrollY > 50){
-      navigation.classList.add('darkbg');
+      navigation.classList.add('navbar--darkbg');
     } else {
-      navigation.classList.remove('darkbg');
+      navigation.classList.remove('navbar--darkbg');
     }
 });
+
+
+// Navbar automation
+var navLinks = document.getElementsByClassName("navbar--links")[0];
+var navButton = document.getElementsByClassName("navbar--btn")[0];
+
+navButton.addEventListener('click', toggleNav);
+
+function toggleNav() {
+  console.log("clicked");
+  navLinks.classList.toggle('visible');
+}
