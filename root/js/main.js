@@ -6,10 +6,10 @@ adder.addEventListener('click', addContent);
 function addContent() {
 
   content.innerHTML = "";
-  let x = false;
+  let darkbg = false;
   for (let i in posts) {
-      content.innerHTML += componentPost(posts[i], x);
-      x = !x;
+      content.innerHTML += componentPost(posts[i], darkbg);
+      darkbg = !darkbg;
   }
 
 }
