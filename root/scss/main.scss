@@ -200,7 +200,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding-top: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
 
     &:hover {
       cursor: pointer;
@@ -243,6 +244,11 @@ body::-webkit-scrollbar-thumb {
       display: flex;
 
       li {
+
+        .active {
+          background-color: $light-blue;
+        }
+
         a {
           text-decoration: none;
           padding: 10px;
