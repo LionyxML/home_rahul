@@ -234,6 +234,7 @@ body::-webkit-scrollbar-thumb {
           padding: 10px;
           color: $white;
           transition: all .3s ease;
+          text-transform: uppercase;
 
           &:hover {
             background-color: $light-blue;
