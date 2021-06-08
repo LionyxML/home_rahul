@@ -1,11 +1,34 @@
 
-var adder = document.getElementById('addContent');
+var heroText = document.getElementsByClassName('hero-text-only')[0];
+var heroSub = document.getElementsByClassName('hero-sub-text')[0];
 var content = document.getElementsByClassName('content')[0];
-adder.addEventListener('click', addContent);
 
-function addContent() {
+// Buttons Objects + Router
+var routeHome = document.getElementById('goToHome');
+routeHome.addEventListener('click', renderHome);
 
+var routeWebDev = document.getElementById('goToWebDev');
+routeWebDev.addEventListener('click', renderWebDev);
+
+
+// Render View Functions
+function renderHome() {
+  resetActive();
+  routeHome.classList.add("active");
+
+  heroText.innerHTML = "Non Scholae, Sed Vitae Discimus.";
+  heroSub.innerHTML = "- Seneca";
+  content.innerHTML = welcome();
+}
+
+function renderWebDev() {
+  resetActive();
+  routeWebDev.classList.add("active");
+
+  heroText.innerHTML = "Software";
+  heroSub.innerHTML = "";
   content.innerHTML = "";
+
   let darkbg = false;
   for (let i in posts) {
       content.innerHTML += componentPost(posts[i], darkbg);
@@ -15,7 +38,16 @@ function addContent() {
 }
 
 
-// Example data:
+// Aux Functions
+function resetActive(){
+  var routes = document.getElementsByClassName("route");
+  console.log(routes);
+  for (let route of routes) {
+      route.classList.remove("active");
+  }
+}
+
+// Example data (to be exported to it's own json file)
 var post = {
   title: "Título do programa",
   desc: `
@@ -122,6 +154,35 @@ function componentPost(content, darkbg){
   return model.html;
 }
 
+
+// Component: WELCOME
+// Generates my WELCOME Message
+function welcome(){
+  var model = {
+    html : `
+        <div class="row px-2">
+          <div class="col">
+            <div class="content-title">Bem vindo(a)!</div>
+            <div class="content-text">
+              <p>Olá! Eu sou o Rahul!</p>
+              <p>Você chegou ao meu laboratório! Utilize a barra de navegação para acessar as seções do site!</p>
+            </div>
+          </div>
+          <div class="col center">
+            <img class="thumb" src="https://picsum.photos/300" alt="">
+          </div>
+        </div>
+    `
+  };
+
+  return model.html;
+}
+
+
+// When the window is loaded
+window.onload = function() {
+  content.innerHTML = welcome();
+}
 
 // Scrollbar automation
 var navigation = document.getElementsByClassName("navbar")[0];
