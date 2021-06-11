@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   line-height: 1.5rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.1rem;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2rem;
 
     ul {
-      list-style: square;
+      list-style: none;
       list-style-position: inside;
 
       a {

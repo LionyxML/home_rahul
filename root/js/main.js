@@ -48,37 +48,20 @@ function resetActive(){
 }
 
 // Example data (to be exported to it's own json file)
-var post = {
-  title: "Título do programa",
-  desc: `
-  <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
-  <br>
-  <ul>
-    <li>Roda diretamente no Browser</li>
-    <li>Utiliza o fetch()</li>
-    <li>Escalonamento automático com a tela</li>
-    <li>Tradutor Básico</li>
-    <li>Utiliza HTML5, JS, CSS3</li>
-    <li><a href="#">Github</a></li>
-    <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
-  </ul>`,
-  image: `https://picsum.photos/300`
-}
-
 var posts = [
   {
     title: "Título do programa",
     desc: `
     <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
     <br>
-    <ul>
-      <li>Roda diretamente no Browser</li>
-      <li>Utiliza o fetch()</li>
-      <li>Escalonamento automático com a tela</li>
-      <li>Tradutor Básico</li>
-      <li>Utiliza HTML5, JS, CSS3</li>
-      <li><a href="#">Github</a></li>
-      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    <ul class="bx-ul">
+      <li><i class="bx bx-right-arrow"></i>Roda diretamente no Browser</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza o fetch()</li>
+      <li><i class="bx bx-right-arrow"></i>Escalonamento automático com a tela</li>
+      <li><i class="bx bx-right-arrow"></i>Tradutor Básico</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza HTML5, JS, CSS3</li>
+      <li><i class="bx bx-right-arrow"></i><a href="#">Github</a></li>
+      <li><i class="bx bx-right-arrow"></i>Teste a aplicação rodando <a href="#">AQUI</a></li>
     </ul>`,
     image: `https://picsum.photos/300`
   },
@@ -87,14 +70,14 @@ var posts = [
     desc: `
     <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
     <br>
-    <ul>
-      <li>Roda diretamente no Browser</li>
-      <li>Utiliza o fetch()</li>
-      <li>Escalonamento automático com a tela</li>
-      <li>Tradutor Básico</li>
-      <li>Utiliza HTML5, JS, CSS3</li>
-      <li><a href="#">Github</a></li>
-      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    <ul class="bx-ul">
+      <li><i class="bx bx-right-arrow"></i>Roda diretamente no Browser</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza o fetch()</li>
+      <li><i class="bx bx-right-arrow"></i>Escalonamento automático com a tela</li>
+      <li><i class="bx bx-right-arrow"></i>Tradutor Básico</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza HTML5, JS, CSS3</li>
+      <li><i class="bx bx-right-arrow"></i><a href="#">Github</a></li>
+      <li><i class="bx bx-right-arrow"></i>Teste a aplicação rodando <a href="#">AQUI</a></li>
     </ul>`,
     image: `https://picsum.photos/300`
   },
@@ -103,14 +86,14 @@ var posts = [
     desc: `
     <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
     <br>
-    <ul>
-      <li>Roda diretamente no Browser</li>
-      <li>Utiliza o fetch()</li>
-      <li>Escalonamento automático com a tela</li>
-      <li>Tradutor Básico</li>
-      <li>Utiliza HTML5, JS, CSS3</li>
-      <li><a href="#">Github</a></li>
-      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    <ul class="bx-ul">
+      <li><i class="bx bx-right-arrow"></i>Roda diretamente no Browser</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza o fetch()</li>
+      <li><i class="bx bx-right-arrow"></i>Escalonamento automático com a tela</li>
+      <li><i class="bx bx-right-arrow"></i>Tradutor Básico</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza HTML5, JS, CSS3</li>
+      <li><i class="bx bx-right-arrow"></i><a href="#">Github</a></li>
+      <li><i class="bx bx-right-arrow"></i>Teste a aplicação rodando <a href="#">AQUI</a></li>
     </ul>`,
     image: `https://picsum.photos/300`
   },
@@ -119,14 +102,14 @@ var posts = [
     desc: `
     <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
     <br>
-    <ul>
-      <li>Roda diretamente no Browser</li>
-      <li>Utiliza o fetch()</li>
-      <li>Escalonamento automático com a tela</li>
-      <li>Tradutor Básico</li>
-      <li>Utiliza HTML5, JS, CSS3</li>
-      <li><a href="#">Github</a></li>
-      <li>Teste a aplicação rodando <a href="#">AQUI</a></li>
+    <ul class="bx-ul">
+      <li><i class="bx bx-right-arrow"></i>Roda diretamente no Browser</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza o fetch()</li>
+      <li><i class="bx bx-right-arrow"></i>Escalonamento automático com a tela</li>
+      <li><i class="bx bx-right-arrow"></i>Tradutor Básico</li>
+      <li><i class="bx bx-right-arrow"></i>Utiliza HTML5, JS, CSS3</li>
+      <li><i class="bx bx-right-arrow"></i><a href="#">Github</a></li>
+      <li><i class="bx bx-right-arrow"></i>Teste a aplicação rodando <a href="#">AQUI</a></li>
     </ul>`,
     image: `https://picsum.photos/300`
   }
