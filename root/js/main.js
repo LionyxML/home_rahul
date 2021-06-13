@@ -1,4 +1,5 @@
 
+var smooth = document.getElementsByClassName('smooth');
 var heroText = document.getElementsByClassName('hero-text-only')[0];
 var heroSub = document.getElementsByClassName('hero-sub-text')[0];
 var content = document.getElementsByClassName('content')[0];
@@ -11,41 +12,64 @@ var routeWebDev = document.getElementById('goToWebDev');
 routeWebDev.addEventListener('click', renderWebDev);
 
 
+function fade() {
+  for (let element of smooth) {
+    element.style.opacity = 0;
+  }
+}
+
+function reveal() {
+  for (let element of smooth) {
+    element.style.opacity = 1;
+  }
+}
+
 // Render View Functions
 function renderHome() {
   resetActive();
-  routeHome.classList.add("active");
+  fade();
 
-  heroText.innerHTML = "Non Scholae, Sed Vitae Discimus.";
-  heroSub.innerHTML = "- Seneca";
-  content.innerHTML = welcome();
+  setTimeout( function () {
+    routeHome.classList.add("active");
+    heroText.innerHTML = "Non Scholae, Sed Vitae Discimus.";
+    heroSub.innerHTML = "- Seneca";
+    content.innerHTML = welcome();
+    reveal();
+  }, 500);
+
 }
 
 function renderWebDev() {
   resetActive();
   routeWebDev.classList.add("active");
 
-  heroText.innerHTML = "Software";
-  heroSub.innerHTML = "";
-  content.innerHTML = "";
+  fade();
 
-  let darkbg = false;
-  for (let i in posts) {
-      content.innerHTML += componentPost(posts[i], darkbg);
-      darkbg = !darkbg;
-  }
+  setTimeout( function() {
+    heroText.innerHTML = "Software";
+    heroSub.innerHTML = "";
+    content.innerHTML = "";
 
+    let darkbg = false;
+    for (let i in posts) {
+        content.innerHTML += componentPost(posts[i], darkbg);
+        darkbg = !darkbg;
+    }
+    
+    reveal();
+  }, 500);
 }
 
 
 // Aux Functions
 function resetActive(){
   var routes = document.getElementsByClassName("route");
-  console.log(routes);
   for (let route of routes) {
       route.classList.remove("active");
   }
 }
+
+
 
 // Example data (to be exported to it's own json file)
 var posts = [
@@ -187,7 +211,6 @@ var navBars = document.getElementsByClassName("navbar--btn--bar");
 navButton.addEventListener('click', toggleNav);
 
 function toggleNav() {
-  console.log("clicked");
   navLinks.classList.toggle('visible');
 
   for (let bar of navBars){

@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {
   height: 14px;
   background-color: $light-blue-40;
   border-radius: 10rem;
+  transition: all ease 1s;
 }
 
 .hero-sub-text {
@@ -276,4 +277,12 @@ body::-webkit-scrollbar-thumb {
   visibility: visible !important;
   opacity: 100%;
   transform: translateX(-200px);
+}
+
+.smooth {
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
 }
