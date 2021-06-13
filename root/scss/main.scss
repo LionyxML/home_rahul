@@ -186,9 +186,12 @@ body::-webkit-scrollbar-thumb {
   font-family: "Oswald";
   width: 100%;
   padding: 1rem;
+  z-index: 10;
+
 
   &--darkbg {
-    background-color: black;
+    transition: all 1s ease-in-out;
+    background-color: rgb(0,0,0);
   }
 
   &--btn {

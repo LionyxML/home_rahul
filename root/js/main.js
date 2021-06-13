@@ -55,7 +55,7 @@ function renderWebDev() {
         content.innerHTML += componentPost(posts[i], darkbg);
         darkbg = !darkbg;
     }
-    
+
     reveal();
   }, 500);
 }
