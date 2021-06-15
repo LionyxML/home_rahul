@@ -1,4 +1,3 @@
-
 var smooth = document.getElementsByClassName('smooth');
 var heroText = document.getElementsByClassName('hero-text-only')[0];
 var heroSub = document.getElementsByClassName('hero-sub-text')[0];
@@ -29,7 +28,7 @@ function renderHome() {
   resetActive();
   fade();
 
-  setTimeout( function () {
+  setTimeout(function() {
     routeHome.classList.add("active");
     heroText.innerHTML = "Non Scholae, Sed Vitae Discimus.";
     heroSub.innerHTML = "- Seneca";
@@ -45,15 +44,15 @@ function renderWebDev() {
 
   fade();
 
-  setTimeout( function() {
+  setTimeout(function() {
     heroText.innerHTML = "Software";
     heroSub.innerHTML = "";
     content.innerHTML = "";
 
     let darkbg = false;
     for (let i in posts) {
-        content.innerHTML += componentPost(posts[i], darkbg);
-        darkbg = !darkbg;
+      content.innerHTML += componentPost(posts[i], darkbg);
+      darkbg = !darkbg;
     }
 
     reveal();
@@ -62,18 +61,17 @@ function renderWebDev() {
 
 
 // Aux Functions
-function resetActive(){
+function resetActive() {
   var routes = document.getElementsByClassName("route");
   for (let route of routes) {
-      route.classList.remove("active");
+    route.classList.remove("active");
   }
 }
 
 
 
 // Example data (to be exported to it's own json file)
-var posts = [
-  {
+var posts = [{
     title: "Título do programa",
     desc: `
     <p>Aplicação cliente para a Star Wars API. Você pode pegar as informações de qualquer personagem procurando pelo nome.</p>
@@ -141,9 +139,9 @@ var posts = [
 
 // Component: POST
 // Generates POST from given content
-function componentPost(content, darkbg){
+function componentPost(content, darkbg) {
   var model = {
-    html : `
+    html: `
         <div class="row px-2 ${ darkbg ? "bg-sec" : "" }">
           <div class="col">
             <div class="content-title">${ content.title }</div>
@@ -164,15 +162,16 @@ function componentPost(content, darkbg){
 
 // Component: WELCOME
 // Generates my WELCOME Message
-function welcome(){
+function welcome() {
   var model = {
-    html : `
+    html: `
         <div class="row px-2">
           <div class="col">
             <div class="content-title">Bem vindo(a)!</div>
             <div class="content-text">
               <p>Olá! Eu sou o Rahul!</p>
-              <p>Você chegou ao meu laboratório! Utilize a barra de navegação para acessar as seções do site!</p>
+              <p>Bem vindo(a) ao meu laboratório!<p>
+              <p>Utilize a barra de navegação para acessar as seções do site!</p>
             </div>
           </div>
           <div class="col center">
@@ -195,11 +194,11 @@ window.onload = function() {
 var navigation = document.getElementsByClassName("navbar")[0];
 
 window.addEventListener("scroll", (event) => {
-    if(this.scrollY > 50){
-      navigation.classList.add('navbar--darkbg');
-    } else {
-      navigation.classList.remove('navbar--darkbg');
-    }
+  if (this.scrollY > 50) {
+    navigation.classList.add('navbar--darkbg');
+  } else {
+    navigation.classList.remove('navbar--darkbg');
+  }
 });
 
 
@@ -213,7 +212,7 @@ navButton.addEventListener('click', toggleNav);
 function toggleNav() {
   navLinks.classList.toggle('visible');
 
-  for (let bar of navBars){
+  for (let bar of navBars) {
     bar.classList.toggle('close');
   }
 
